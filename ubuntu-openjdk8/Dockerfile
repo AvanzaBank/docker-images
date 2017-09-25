@@ -3,15 +3,15 @@
 ####################################################################################
 
 # Command reference:
-# docker build -t avanzabank/ubuntu-openjdk8:0.0.1 -t avanzabank/ubuntu-openjdk8:latest .
+# docker build -t avanzabank/ubuntu-openjdk8:0.1.1 -t avanzabank/ubuntu-openjdk8:latest .
 # docker run -it avanzabank/ubuntu-openjdk8 /bin/bash
 
 
-FROM ubuntu:16.04
+FROM ubuntu:17.10
 RUN apt-get update && apt-get install -y \
     curl \
     wget \
-    openjdk-8-jdk=8u131-b11-2ubuntu1.16.04.3 && \
+    openjdk-8-jdk=8u144-b01-1 && \
     rm -rf /var/lib/apt/lists
 
 WORKDIR /opt

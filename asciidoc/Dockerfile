@@ -35,4 +35,8 @@ RUN gem install asciidoctor -v 1.5.6.1
 #Install asciidoctor-pdf
 RUN gem install -n /usr/local/bin asciidoctor-pdf --pre -v 1.5.0.alpha.16; asciidoctor-pdf -v
 
+ADD create-pdf.sh /opt/bin/
+
+WORKDIR /opt/avanza
+
 #CMD /bin/bash

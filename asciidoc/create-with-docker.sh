@@ -9,11 +9,5 @@
 
 pushd "${BASH_SOURCE%/*}/"
 
-# Map current directory to /opt/avanza
-docker run -d --name aza-pdf-creation -it -v $PWD:/opt/avanza avanzabank/asciidoc
-
-# Create PDFs from all adoc files found in /opt/avanza
-docker exec aza-pdf-creation /opt/bin/create-pdf.sh /opt/avanza
-
-docker stop aza-pdf-creation
-docker rm aza-pdf-creation
+# Convert all .adoc files from current directory
+docker run -it --rm -v $PWD:/opt/mydir avanzabank/asciidoc /bin/bash -c "cd /opt/mydir; /opt/bin/create-pdf.sh /opt/mydir"

@@ -55,15 +55,15 @@ function create_individual_file_pdfs() {
 
 #################################################
 
-pushd "${BASH_SOURCE%/*}/"
 echo "Converting asciidoc to PDF..."
 
-INPUT_DIR="${INPUT_DIR:-.}"
+INPUT_DIR="${1:-.}"
 OUTPUT_DIR="generated-pdfs"
 mkdir -p "${OUTPUT_DIR}" || exit 1
+echo "Using input dir: ${INPUT_DIR}"
+echo "Using output dir: ${OUTPUT_DIR}"
 wipe_output_dir "${OUTPUT_DIR}"
 create_readme "${OUTPUT_DIR}"
-
 
 #if [ "${INPUT_DIR}" = "." ]
 #then
@@ -72,7 +72,5 @@ create_readme "${OUTPUT_DIR}"
 #fi
 
 create_individual_file_pdfs "${INPUT_DIR}" "${OUTPUT_DIR}"
-
-popd
 
 echo "Converted files successfully"

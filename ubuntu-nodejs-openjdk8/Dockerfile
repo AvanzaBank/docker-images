@@ -8,6 +8,7 @@
 
 
 FROM avanzabank/ubuntu-openjdk8:0.1.1
+
 RUN apt-get update && apt-get install -y \
     nodejs=6.11.4~dfsg-1ubuntu1 \
     npm=3.5.2-0ubuntu4 && \

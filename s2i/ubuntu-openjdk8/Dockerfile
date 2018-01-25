@@ -1,5 +1,5 @@
 ####################################################################################
-# Creates a container to use with OpenShift source-to-image (s2i)
+# Creates an image to use with OpenShift source-to-image (s2i)
 ####################################################################################
 
 # Command reference:

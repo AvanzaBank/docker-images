@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+# The run script executes the server that runs your application.
+#
+# For more information see the documentation:
+#	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
+#
+
+# We expect the jar to be a linux executable. Otherwise use "java -jar ..."
+exec /opt/app/app.jar

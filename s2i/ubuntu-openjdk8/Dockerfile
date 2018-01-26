@@ -26,13 +26,13 @@ COPY  ["run", "assemble", "usage", "/usr/libexec/s2i/"]
 CMD ["/usr/libexec/s2i/usage"]
 
 RUN chgrp -R 0 /usr/libexec/s2i \
-  && chmod -R g+rwx /usr/libexec/s2i
+  && chmod -R u=rwx,go=rx /usr/libexec/s2i
 
 RUN chgrp -R 0 /opt \
-  && chmod -R g+rwx /opt
+  && chmod -R u=rwx,go=rx /opt
 
-RUN chown -R 1001:0 /opt && \
-    chown -R 1001:0 /usr/libexec/s2i/assemble
+RUN chown -R 1001:1001 /opt && \
+    chown -R 1001:1001 /usr/libexec/s2i/assemble
 
 USER 1001
 

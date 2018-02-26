@@ -11,7 +11,7 @@ FROM ubuntu:17.10
 RUN apt-get update && apt-get install -y \
     curl \
     wget \
-    openjdk-8-jdk=8u144-b01-1 && \
+    openjdk-8-jdk=8u151-b12-0ubuntu0.17.10.2 && \
     rm -rf /var/lib/apt/lists
 
 WORKDIR /opt

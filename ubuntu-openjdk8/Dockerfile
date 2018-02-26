@@ -3,7 +3,7 @@
 ####################################################################################
 
 # Command reference:
-# docker build -t avanzabank/ubuntu-openjdk8:0.1.1 -t avanzabank/ubuntu-openjdk8:latest .
+# docker build -t avanzabank/ubuntu-openjdk8:0.1.2 -t avanzabank/ubuntu-openjdk8:latest .
 # docker run -it avanzabank/ubuntu-openjdk8 /bin/bash
 
 

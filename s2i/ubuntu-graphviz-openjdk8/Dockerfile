@@ -7,7 +7,7 @@
 # docker run -it avanzabank/ubuntu-graphviz-openjdk8 /bin/bash
 
 
-FROM avanzabank/ubuntu-graphviz-openjdk8:0.0.1
+FROM avanzabank/ubuntu-graphviz-openjdk8:0.0.2
 
 # Set the labels that are used for OpenShift to describe the builder image.
 LABEL io.k8s.description="Java 8 with graphviz builder image" \

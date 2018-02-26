@@ -7,7 +7,7 @@
 # docker run -it avanzabank/s2i-ubuntu-openjdk8 /bin/bash
 
 
-FROM avanzabank/ubuntu-openjdk8:0.1.1
+FROM avanzabank/ubuntu-openjdk8:0.1.2
 
 # Set the labels that are used for OpenShift to describe the builder image.
 LABEL io.k8s.description="Java 8 web application" \

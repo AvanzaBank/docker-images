@@ -7,7 +7,7 @@
 # docker run -it avanzabank/ubuntu-graphviz-openjdk8 /bin/bash
 
 
-FROM avanzabank/ubuntu-openjdk8:0.1.1
+FROM avanzabank/ubuntu-openjdk8:0.1.2
 
 RUN apt-get update && apt-get install -y \
         graphviz \

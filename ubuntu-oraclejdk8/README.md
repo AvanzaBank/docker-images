@@ -12,7 +12,7 @@ Below is an example script for how to automatically build the image before use.
 ````bash
 #!/bin/bash -e
 
-pushd "${BASH_SOURCE%/*}/../.."
+pushd "${BASH_SOURCE%/*}"
 
 IMAGE=avanzabank/ubuntu-oraclejdk8:local
 

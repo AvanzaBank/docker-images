@@ -2,7 +2,7 @@
 
 Image containing slimmed version of ubuntu with Oracle JDK 8 installed.
 
-**NOTE:** The Oracle JDK license does not allow redistribution. Therefore this image is not distributed via Docker Hub.
+**NOTE:** The Oracle JDK license do not allow redistribution. Therefore this image is not distributed via Docker Hub.
 You'll have to build the image locally. See example below.
 
 ## Building the image locally

@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
 RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
     add-apt-repository ppa:webupd8team/java && \
     apt-get update && apt-get install -y \
-    oracle-java8-installer=8u161-1~webupd8~0 && \
+    oracle-java8-installer=8u171-1~webupd8~0 && \
     rm -rf /var/lib/apt/lists
 
 WORKDIR /opt

@@ -14,6 +14,10 @@ RUN yum -y install \
     java-1.8.0-openjdk-devel-1.8.0.151 \
     && yum clean all
 
+ENV LANG="en_US.UTF-8" \
+    LANGUAGE="en_US:en" \
+    LC_ALL="en_US.UTF-8"
+
 ENV JAVA_HOME /etc/alternatives/java_sdk_1.8.0
 
 WORKDIR /opt

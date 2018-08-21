@@ -14,7 +14,7 @@ ENV LANG C.UTF-8
 RUN apt-get update && apt-get install -y \
     curl \
     wget \
-    openjdk-8-jdk=8u151-b12-0ubuntu0.17.10.2 && \
+    openjdk-8-jdk=8u181-b13-0ubuntu0.18.04.1 && \
     rm -rf /var/lib/apt/lists
 
 WORKDIR /opt

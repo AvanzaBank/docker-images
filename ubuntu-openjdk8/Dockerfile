@@ -7,7 +7,7 @@
 # docker run -it avanzabank/ubuntu-openjdk8 /bin/bash
 
 
-FROM ubuntu:18.10
+FROM ubuntu:18.04
 
 ENV LANG C.UTF-8
 

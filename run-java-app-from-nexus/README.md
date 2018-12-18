@@ -47,7 +47,7 @@ function runWithArtifact() {
     exit;
 }
 
-runWithArtifact "my.group.id" "my-artifact" "LATEST" "executable" "-Dlogging.level.reactor.ipc.netty.channel.ChannelOperationsHandler=DEBUG" "-p 8188:8188 -p 8189:8189"
+runWithArtifact "my.group.id" "my-artifact" "LATEST" "executable" "-Dlogging.level.org.springframework.boot.web.embedded=DEBUG" "-p 8188:8188 -p 8189:8189"
 
 #docker logs -f "my-test-my-artifact"
 ````

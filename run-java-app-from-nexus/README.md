@@ -64,10 +64,10 @@ services:
       ARTIFACT_ID: 'my-service'
       VERSION: 'LATEST'
       CLASSIFIER: 'executable'
-      JAVA_ARGS: '-Dlogging.level.reactor.ipc.netty.channel.ChannelOperationsHandler=DEBUG'
+      JAVA_ARGS: '-Dlogging.level.org.springframework.boot.web=DEBUG'
       NEXUS_URI: "http://nexus.example.com"
     ports:
-      - 8181:8181 # gateway port
+      - 8181:8181
       - 8180:8180 # actuator port e.g. http://localhost:8181/actuator/
     depends_on:
       - my-other-service
